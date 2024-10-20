@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container"> 
+            <div class="nav">
+                <img src="weather.svg" alt="" width="64px" height="64px">
+                <form class="weatherForm" id="weatherForm">
+                    <input type="text" placeholder="Search Your Location..." id="flocation" >
+                </form>
+            </div>
+            <div class="location">
+                <h1><center><span id="location"></span></center></h1>
+            </div>
+            <div class="weather-container">
+                <div class="information">
+                    <div class="temp-c">
+                        <img src="temperature.svg" alt="" width="44px" height="44px">
+                        <h3><span id="temp-c"></span> &deg;C</h3>
+                    </div>
+                    <div class="humidity-container">
+                        <img src="humidity.svg" alt="" width="44px" height="44px">
+                        <h3><span class="humidity"></span>%</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="all-info">
+                <hr>
+                <div class="detail-temp">
+                    <h3>Humidity</h3>
+                    <p><span class="humidity"></span>%</p>
+                </div>
+                <hr>
+                <div class="detail-temp">
+                    <h3>Sunrise </h3>
+                    <p><span id="sunrise"></span> A.M</p>
+                </div>
+                <hr>
+                <div class="detail-temp">
+                    <h3>Wind</h3>
+                    <p><span id="wind"></span> KpH</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="chart-container">
+            <div class="chart">
+                <h3><center>Temperature &deg;C</center> </h3>
+                <canvas id="myChart" style="width:100%;max-width:400px"></canvas> 
+            </div>
+            <div class="chart">
+                <h3><center>Humidity</center></h3>
+                <canvas id="myChart2" style="width:100%;max-width:400px"></canvas> 
+            </div>
+        </div>
+    </div>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

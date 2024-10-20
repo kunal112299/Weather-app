@@ -1,0 +1,108 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+}
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .container{
+        border-radius: 30px;
+        max-width: 400px;
+
+        padding: 20px 30px;
+        width: 100%;
+        /* height: 70vh; */
+        padding-top: 40px;
+        /* border: 1px solid gray; */
+        display: flex;
+        border: none;
+        flex-direction: column;
+        gap: 30px;
+        -webkit-box-shadow: 10px 10px 45px -11px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 45px -11px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 45px -11px rgba(0,0,0,0.75);
+        .nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20;
+            
+            .weatherForm{
+                input{
+                    padding: 15px 30px;
+                    border-radius: 20px;
+                    border: 1px solid gray;
+                }
+            }
+
+        }
+        .loaction{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .weather-container{
+            .information{
+                display: flex;
+                justify-content: space-around;
+                .temp-c{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+                .humidity-container{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .all-info{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            .detail-temp{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    .chart-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .chart{
+            border-radius: 30px;
+            max-width: 400px;
+    
+            padding: 20px 30px;
+            width: 477px;
+            /* height: 70vh; */
+            padding-top: 40px;
+            /* border: 1px solid gray; */
+            display: flex;
+            border: none;
+            flex-direction: column;
+            gap: 30px;
+            -webkit-box-shadow: 10px 10px 45px -11px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 45px -11px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 45px -11px rgba(0,0,0,0.75);
+            
+        }
+    }
+}
+
+
+@media (max-width: 878px){
+    .main{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding-top: 40px;
+    }
+}
